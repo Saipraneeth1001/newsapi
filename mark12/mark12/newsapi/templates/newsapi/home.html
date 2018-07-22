@@ -1,0 +1,16 @@
+{% block content %}
+
+<h2 style="text-align: center; font-family: sans-serif;">NEWS API </h2>
+
+ {% for i in gedata.articles %}
+
+	 <ul style="font-family: sans-serif;font-style: italic;font-size: 18px; border-color: lightblue; background-color: lightblue;">
+		<li style="font-style: Bold">{{i.title}}</li>
+		<p>{{i.description}}</p>
+		<p><a href="{{i.url}}">{{i.url}}</a></p>
+
+	</ul>
+ {% endfor %}
+
+
+{% endblock %}
